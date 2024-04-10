@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 190, 190);
+}
+
+.digital{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 500px;
+    height: 260px;
+    background-color: black;
+    border-style: solid;
+    border-width: 10px;
+    border-color: dimgray;
+    border-radius: 50px;
+}
+
+.digital p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 140px;
+    text-align: center;
+    line-height: 0%;
+    color: darkred;
+}
+
+.analogico{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analogico::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background-color: black;
+}
+
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: black;
+}
+
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 110px;
+    background-color: darkred;
+}
